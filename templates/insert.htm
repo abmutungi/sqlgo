@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<body>
+
+<h2>Add User</h2>
+
+<form action="/insert" method="POST">
+  <label for="nameID">First Name:</label><br>
+  <input type="text" id="nameID" name="firstName" value=""><br>
+  <p></p>
+  <label for="surnameID">Surname:</label><br>
+  <input type="text" id="surnameID" name="lastName" value=""><br>
+  <p></p>
+  <label for="universityID">University:</label><br>
+  <input type="text" id="universityID" name="uniName" value=""><br>
+  <p></p>
+  <label for="ageID">Age:</label><br>
+  <input type="number" id="ageID" name="age" min="18" max="50"><br>
+  <p></p>
+  <input type="submit" value="Submit"></form>
+<br><br>
+
+{{if .}}
+  <h2>{{.}}</h2>
+{{end}}
+<br>
+<a href="/browse">All Users</a>
+</body>
+</html>

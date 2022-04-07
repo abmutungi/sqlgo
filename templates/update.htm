@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+<body>
+
+<h2>Update User</h2>
+
+<form action="/updateresult/?idusers={{.Id}}" method="POST">
+  <label for="nameID">Name:</label><br>
+  <input type="text" id="nameID" name="firstName" value="{{.Username}}"><br>
+  <label for="surnameID">Surname:</label><br>
+  <input type="text" id="surnameID" name="lastName" value="{{.Surname}}"><br>
+  <label for="ageID">Age:</label><br>
+  <input type="number" id="ageID" name="age" value="{{.Age}}"><br>
+  <label for="universityID">University:</label><br>
+  <input type="text" id="universityID" name="uniName" value="{{.University}}"><br>
+  <br>
+  <input type="submit" value="Update User">
+</form>
+<br><br><br>
+<a href="/browse">Browse Users</a>
+
+</body>
+</html>
